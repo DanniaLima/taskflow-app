@@ -20,6 +20,7 @@ body {
 }
 
 .todo-card {
+  width: 100%;
   max-width: 500px;
   margin: 0 auto;
   background: #ffffff;
@@ -92,10 +93,12 @@ h1 {
   display: flex;
   align-items: center;
   gap: 12px;
+  flex: 1;
 }
 
 .task-text {
   font-size: 16px;
+  word-break: break-word;
 }
 
 .completed .task-text {
@@ -121,4 +124,58 @@ h1 {
   text-align: center;
   color: #6b7280;
   margin-top: 10px;
+}
+
+.task-info {
+  margin-bottom: 16px;
+  text-align: center;
+  font-size: 15px;
+  color: #4b5563;
+  font-weight: bold;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  border: none;
+  background: #e5e7eb;
+  color: #1f2937;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.filter-btn:hover {
+  background: #d1d5db;
+}
+
+.filter-btn.active {
+  background: #3b82f6;
+  color: white;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-btn {
+  border: none;
+  background: #f59e0b;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.edit-btn:hover {
+  background: #d97706;
 }

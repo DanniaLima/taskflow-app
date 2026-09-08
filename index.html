@@ -1,31 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TaskFlow - Lista de Tarefas</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <main class="container">
-    <div class="todo-card">
-      <h1>TaskFlow</h1>
-      <p class="subtitle">Organize suas tarefas de forma simples</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskFlow - Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="todo-card">
+        <h1>TaskFlow</h1>
+        <p class="subtitle">Organize suas tarefas de forma simples</p>
 
-      <form id="task-form" class="task-form">
-        <input
-          type="text"
-          id="task-input"
-          placeholder="Digite uma nova tarefa"
-          autocomplete="off"
-        />
-        <button type="submit">Adicionar</button>
-      </form>
+        <form id="task-form" class="task-form">
+          <input
+            type="text"
+            id="task-input"
+            placeholder="Digite uma nova tarefa"
+            autocomplete="off"
+          />
+          <button type="submit">Adicionar</button>
+        </form>
 
-      <ul id="task-list" class="task-list"></ul>
-    </div>
-  </main>
+        <div class="task-info" id="task-info">Total: 0 | Concluídas: 0</div>
 
-  <script src="script.js"></script>
-</body>
+        <div class="filters">
+          <button type="button" class="filter-btn active" data-filter="all">
+            Todas
+          </button>
+          <button type="button" class="filter-btn" data-filter="pending">
+            Pendentes
+          </button>
+          <button type="button" class="filter-btn" data-filter="completed">
+            Concluídas
+          </button>
+        </div>
+
+        <ul id="task-list" class="task-list"></ul>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>
