@@ -2,17 +2,20 @@
 
 🌐 Lingue: [English](README.md) | [Português](README.pt-BR.md) | [Italiano](README.it.md)
 
-Un semplice progetto di lista di attività sviluppato con HTML, CSS e JavaScript.
+Un progetto moderno e semplice di lista di attività sviluppato con HTML, CSS e JavaScript.
 
 ## Informazioni sul progetto
 
-TaskFlow App è stato creato per esercitare concetti fondamentali dello sviluppo front-end, come la manipolazione del DOM, gli eventi e l'archiviazione locale con `localStorage`.
+TaskFlow App è stato creato per esercitare concetti fondamentali dello sviluppo front-end, come la manipolazione del DOM, gli eventi, i filtri e l'archiviazione locale con `localStorage`.
 
 ## Funzionalità
 
 - Aggiungere nuove attività
 - Contrassegnare le attività come completate
+- Modificare le attività
 - Eliminare attività
+- Filtrare le attività per stato
+- Visualizzare il totale delle attività e quelle completate
 - Salvare le attività nel browser con `localStorage`
 
 ## Tecnologie utilizzate
@@ -24,3 +27,7 @@ TaskFlow App è stato creato per esercitare concetti fondamentali dello sviluppo
 ## Obiettivo
 
 Questo progetto è stato sviluppato con finalità di pratica e apprendimento, servendo come progetto di portfolio per dimostrare competenze di base nello sviluppo web.
+
+## Progetto online
+
+Accedi qui: https://dannialima.github.io/taskflow-app/
